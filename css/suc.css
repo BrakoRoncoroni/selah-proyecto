@@ -1,0 +1,88 @@
+/* --------------------------------------------------------------------------   Estilos mobile  ----------------------------------------------------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.navcolor{
+    color: goldenrod;
+}
+
+/* ------------------HEADER---------------- */
+.subtitle-line{
+    color: white;
+    border-bottom: 1px solid #999;
+    border-top: 1px solid #999;
+    display: block;
+    font-size: 1.188rem;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 5px;
+    text-align: center;
+}
+.navbar{
+    display: flex;
+    position: sticky;
+
+}
+
+.navcolor{
+    border-radius: 10px;
+    background-color:rgb(33, 33, 33);
+}
+
+.navbar-brand{
+    font-size: medium;
+}
+
+.nav-link, .navbar-brand{
+    color: rgb(132, 101, 21) !important;
+
+}
+
+.navbar-toggler-icon{
+    color: whitesmoke !important;
+}
+
+/* --------------------main------------------------ */
+.sucursales{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #999;
+}
+
+.sucursales a{
+    text-decoration: underline;
+    color: goldenrod;
+}
+
+footer{
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width: 1024px){  
+    main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 10vh;
+    }
+
+    .sucursales{
+        gap: 20px;
+    }
+
+    .maps{
+        height: 300px;
+        width: 450px;
+    }
+    
+}

@@ -1,0 +1,115 @@
+/* --------------------------------------------------------------------------   Estilos mobile  ----------------------------------------------------------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.navcolor{
+    color: goldenrod;
+}
+
+/* ------------------HEADER---------------- */
+.subtitle-line{
+    color: white;
+    border-bottom: 1px solid #999;
+    border-top: 1px solid #999;
+    display: block;
+    font-size: 1.188rem;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 5px;
+    text-align: center;
+}
+.navbar{
+    display: flex;
+    position: sticky;
+
+}
+
+.navcolor{
+    border-radius: 10px;
+    background-color:rgb(33, 33, 33);
+}
+
+.navbar-brand{
+    font-size: medium;
+}
+
+.nav-link, .navbar-brand{
+    color: rgb(132, 101, 21) !important;
+
+}
+
+.navbar-toggler-icon{
+    color: whitesmoke !important;
+}
+
+/* -------------------------------------main------------------------------------ */
+
+.tituloselah, .quienes, .soy{
+    color: rgba(245, 245, 245, 0.804);
+    margin: 5px;
+    padding: 5px;
+}
+
+.tituloselah h1, .quienes{
+    text-decoration: underline;
+}
+
+.parrafo{
+    padding: 5px;
+    border: double 4px  rgb(132, 101, 21);
+}
+.contenedor{
+    display: flex;
+}
+
+
+footer div{
+    margin-top: 10vh;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+footer a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.soy{
+    padding: 5px;
+    border: double 4px  rgb(132, 101, 21);
+}
+
+.imagenes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+/* ---------------------------------------MEDIAQUERIES-------------------------------------- */
+/* Estilos Desktop */
+
+@media screen and (min-width: 1024px){
+    .soy{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column: span 1;
+
+    }
+
+    .redesnosotros{
+        border: double 4px rgb(132, 101, 21);
+        padding: 5px;
+    }
+
+}
